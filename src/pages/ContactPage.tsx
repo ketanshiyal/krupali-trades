@@ -11,7 +11,7 @@ const ContactPage = () => {
   };
 
   return (
-    <div className="pt-20">
+    <div className="pt-8">
       <section className="bg-hero py-16 text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">Contact Us</h1>

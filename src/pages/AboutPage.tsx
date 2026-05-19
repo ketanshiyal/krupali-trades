@@ -126,7 +126,7 @@ import SectionTitle from "@/components/SectionTitle";
 
 const AboutPage = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-8">
       {/* Hero */}
       <section className="bg-hero py-20 text-primary-foreground">
         <div className="container mx-auto px-4 text-center">

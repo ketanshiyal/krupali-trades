@@ -25,7 +25,7 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="pt-20">
+    <div className="pt-5">
       <section className="bg-hero py-16 text-primary-foreground">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">Our Products</h1>
@@ -39,11 +39,10 @@ const ProductsPage = () => {
           <div className="flex flex-wrap gap-2 justify-center mb-10">
             <button
               onClick={() => handleCategory("All")}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                activeCategory === "All"
-                  ? "bg-primary text-primary-foreground"
-                  : "bg-muted text-muted-foreground hover:bg-primary/10"
-              }`}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === "All"
+                ? "bg-primary text-primary-foreground"
+                : "bg-muted text-muted-foreground hover:bg-primary/10"
+                }`}
             >
               All
             </button>
@@ -51,11 +50,10 @@ const ProductsPage = () => {
               <button
                 key={cat}
                 onClick={() => handleCategory(cat)}
-                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${
-                  activeCategory === cat
-                    ? "bg-primary text-primary-foreground"
-                    : "bg-muted text-muted-foreground hover:bg-primary/10"
-                }`}
+                className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === cat
+                  ? "bg-primary text-primary-foreground"
+                  : "bg-muted text-muted-foreground hover:bg-primary/10"
+                  }`}
               >
                 {cat}
               </button>
