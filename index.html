@@ -1,28 +1,77 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- TODO: Set the document title to the name of your application -->
-    <title>Krupali Traders – Premium Import Export Company India</title>
-    <meta name="description" content="Krupali Traders is a leading import-export company from India, specializing in spices, herbs, dry fruits, nuts, fresh produce, handicrafts and more." />
-    <meta name="author" content="Krupali Traders" />
 
-    <meta property="og:title" content="Krupali Traders – Import Export Company" />
-    <meta property="og:description" content="Your trusted partner in global trade. Premium Indian products exported worldwide." />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- TODO: Set the document title to the name of your application -->
+  <title>Krupali Traders – Premium Import Export Company India</title>
+  <meta name="description"
+    content="Krupali Traders is a leading import-export company from India, specializing in spices, herbs, dry fruits, nuts, fresh produce, handicrafts and more." />
+  <meta name="author" content="Krupali Traders" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@Lovable" />
-    <meta name="twitter:image" content="https://krupalitraders.com/wp-content/uploads/2024/05/ok_logo_copy-removebg-preview.png" />
+  <meta property="og:title" content="Krupali Traders – Import Export Company" />
+  <meta property="og:description"
+    content="Your trusted partner in global trade. Premium Indian products exported worldwide." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
 
-    <!-- Add favicon -->
-    <link rel="icon" type="image/png" href="/logo.png" />
-  </head>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@Lovable" />
+  <meta name="twitter:image"
+    content="https://krupalitraders.com/wp-content/uploads/2024/05/ok_logo_copy-removebg-preview.png" />
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Add favicon -->
+  <link rel="icon" type="image/png" href="/logo.png" />
+</head>
+
+<body>
+  <div id="root"></div>
+  
+  <!-- Fixed Bottom Left Translate Button -->
+  <div style="position: fixed; bottom: 20px; left: 20px; z-index: 999999;">
+    <div class="gtranslate_wrapper"></div>
+  </div>
+  <script>window.gtranslateSettings = {"default_language":"en","wrapper_selector":".gtranslate_wrapper"}</script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/popup.js" defer></script>
+  
+  <style>
+    /* Customize the GTranslate popup trigger to look like an orange button */
+    .gtranslate_wrapper {
+      background-color: #f97316;
+      border-radius: 4px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      display: inline-block;
+    }
+    .gtranslate_wrapper > a {
+      display: block !important;
+      padding: 10px 20px !important;
+      color: transparent !important; /* Hide original text */
+      text-decoration: none !important;
+      position: relative;
+      width: 120px; /* Fixed width for the button */
+      height: 40px;
+    }
+    .gtranslate_wrapper > a img {
+      display: none !important; /* Hide the flag on the button */
+    }
+    /* Add "Translate »" text */
+    .gtranslate_wrapper > a::after {
+      content: "Translate \00BB";
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: sans-serif;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      white-space: nowrap;
+    }
+  </style>
+
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
 </html>
